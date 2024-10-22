@@ -1,0 +1,132 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  position: fixed; /* Fix the navbar to the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+.navbar-links li {
+  margin: 0 20px;
+  cursor: pointer;
+  color: black;
+}
+
+.navbar-links li:hover {
+  color: gray;
+}
+
+
+/* Left Side: Company Logo */
+.navbar-left {
+  font-family: 'Times New Roman', Times, serif; /* Set font family */
+  width: auto; /* Width auto */
+  color: orange; /* Text color */
+  font-variant: small-caps; /* Small caps */
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.navbar-left .company-logo {
+  text-decoration: none; /* Remove text decoration */
+  color: orange; /* Ensure logo color is orange (in case default link color is applied) */
+}
+
+
+/* Middle: Navigation Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  flex: 1;
+  justify-content: center;
+}
+
+
+/* Right Side: Profile Section */
+.navbar-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Register Button */
+.register-btn {
+  background-color: orange;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.register-btn:hover {
+  background-color: darkorange;
+}
+
+/* Profile Section */
+.profile-section {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: black;
+}
+
+.default-profile-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: orange;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: black;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
